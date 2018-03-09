@@ -23,3 +23,7 @@ Google, for security reasons, may take up towards a day to accept new changes de
 Try contacting me via email: steinerinn@gmail.com
 I check that semi-fairly-sometimes-regularly :P
 
+## Screenshots (v 0.7.3)
+
+http://pix.toile-libre.org/upload/original/1520593026.png
+http://pix.toile-libre.org/upload/original/1520593162.png
