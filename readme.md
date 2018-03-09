@@ -25,5 +25,8 @@ I check that semi-fairly-sometimes-regularly :P
 
 ## Screenshots (v 0.7.3)
 
-http://pix.toile-libre.org/upload/original/1520593026.png
-http://pix.toile-libre.org/upload/original/1520593162.png
+
+
+
+![Overview](http://pix.toile-libre.org/upload/original/1520593026.png "Options for 0.7.3")
+![In action](http://pix.toile-libre.org/upload/original/1520593162.png "Group Look for 0.7.3")
