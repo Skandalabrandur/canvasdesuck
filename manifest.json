@@ -1,0 +1,19 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+      "manifest_version": 2,
+       
+        "name": "Canvas Group Selection De-suckifier",
+        "version": "0.7.3",
+        "description": "Allows you to join groups faster",
+            
+        "content_scripts": [{
+          "matches": ["https://reykjavik.instructure.com/courses/*/groups"],
+          "run_at": "document_idle",
+          "js": ["inject.js"]
+        }],
+
+        "web_accessible_resources": ["arg.js"],
+
+        "icons": { "128" : "icon128.png" }
+}
