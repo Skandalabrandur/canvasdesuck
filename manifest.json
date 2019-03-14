@@ -4,7 +4,7 @@
       "manifest_version": 2,
        
         "name": "Canvas Group Selection De-suckifier",
-        "version": "0.7.3",
+        "version": "0.8.0",
         "description": "Allows you to join groups faster",
             
         "content_scripts": [{
@@ -12,8 +12,8 @@
           "run_at": "document_idle",
           "js": ["inject.js"]
         }],
-
-        "web_accessible_resources": ["arg.js"],
+        
+        "web_accessible_resources": ["arg.js", "draggable.js"],
 
         "icons": { "128" : "icon128.png" }
 }
