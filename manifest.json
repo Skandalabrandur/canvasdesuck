@@ -11,9 +11,16 @@
           "matches": ["https://reykjavik.instructure.com/courses/*/groups"],
           "run_at": "document_idle",
           "js": ["inject.js"]
+        },
+        {
+          "matches": ["https://echo360.org.uk/section/*/home"],
+          "run_at": "document_idle",
+          "js": ["inject_echo.js"],
+          "all_frames": true
+          
         }],
         
-        "web_accessible_resources": ["arg.js", "draggable.js"],
+        "web_accessible_resources": ["arg.js", "draggable.js", "echo_test.js"],
 
         "icons": { "128" : "icon128.png" }
 }
