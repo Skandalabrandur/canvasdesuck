@@ -9,7 +9,7 @@ g.onload = function() {
 
 
 var s = document.createElement('script');
-s.src = chrome.extension.getURL('echo_test.js');
+s.src = chrome.extension.getURL('echo_beta.js');
 (document.head||document.documentElement).appendChild(s);
 s.onload = function() {
     s.parentNode.removeChild(s);

@@ -1,4 +1,6 @@
 var executeModuleExtraction = function() {
+    $(".header-bar").html("<p>Er að safna slóðum til að downloada... vinsamlegast hinkraðu í nokkrar sekúndur</p>")
+
     var moduleLinksCollection = document.getElementsByClassName("for-nvda");
     var moduleLinks = [];
     for(var i = 0; i < moduleLinksCollection.length; i++) {
@@ -36,6 +38,7 @@ var executeModuleExtraction = function() {
         promises.push(request);
     }
     $.when.apply(null, promises).done(function() {
-        downloadQueue(fileLinks.length - 1, fileLinks)
+        downloadQueue(fileLinks.length - 1, fileLinks);
+        $(".header-bar").html("");
     });
 }

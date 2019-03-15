@@ -26,7 +26,7 @@
     }
     ],
 
-    "web_accessible_resources": ["arg.js", "draggable.js", "echo_test.js", "moduleScraperNC.js", "moduleMessage.js"],
+    "web_accessible_resources": ["arg.js", "draggable.js", "echo_beta.js", "moduleScraperNC.js", "moduleMessage.js"],
 
     "icons": { "128" : "icon128.png" }
 }
