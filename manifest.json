@@ -1,26 +1,32 @@
 {
-"update_url": "https://clients2.google.com/service/update2/crx",
+    "update_url": "https://clients2.google.com/service/update2/crx",
 
-      "manifest_version": 2,
-       
-        "name": "Canvas Group Selection De-suckifier",
-        "version": "0.8.0",
-        "description": "Allows you to join groups faster",
-            
-        "content_scripts": [{
-          "matches": ["https://reykjavik.instructure.com/courses/*/groups"],
-          "run_at": "document_idle",
-          "js": ["inject.js"]
-        },
-        {
-          "matches": ["https://echo360.org.uk/section/*/home"],
-          "run_at": "document_idle",
-          "js": ["inject_echo.js"],
-          "all_frames": true
-          
-        }],
-        
-        "web_accessible_resources": ["arg.js", "draggable.js", "echo_test.js"],
+    "manifest_version": 2,
 
-        "icons": { "128" : "icon128.png" }
+    "name": "Canvas Group Selection De-suckifier",
+    "version": "0.8.0",
+    "description": "Allows you to join groups faster",
+
+    "content_scripts": [{
+        "matches": ["https://reykjavik.instructure.com/courses/*/groups"],
+        "run_at": "document_idle",
+        "js": ["inject.js"]
+    },
+    {
+        "matches": ["https://echo360.org.uk/section/*/home"],
+        "run_at": "document_idle",
+        "js": ["inject_echo.js"],
+        "all_frames": true
+
+    },
+    {
+        "matches": ["https://reykjavik.instructure.com/courses/*/modules"],
+        "run_at": "document_idle",
+        "js": ["inject_modules.js"]
+    }
+    ],
+
+    "web_accessible_resources": ["arg.js", "draggable.js", "echo_test.js", "moduleScraperNC.js", "moduleMessage.js"],
+
+    "icons": { "128" : "icon128.png" }
 }
